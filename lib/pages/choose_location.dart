@@ -9,28 +9,12 @@ class _ChooseLocationState extends State<ChooseLocation> {
 
   int counter = 0;
 
-  void getData() async {
-    // Simulate a delay extracting data
-    String firstName = await Future.delayed(Duration(seconds: 3), () {
-      return 'yoshi';
-    });
-//    print('goomba');
-    // yoshi gets printed before goomba: does not wait for future
-
-    String lastName = await Future.delayed(Duration(seconds: 2), () {
-      return 'mario';
-    });
-    // mario comes first
-
-    print('$firstName + $lastName');
-  }
-
   @override
   void initState() {
     // legend has it initState() is where you use 3rd party API.
     super.initState();
     print('initState func ran');
-    getData();
+//    getData();
   }
 
   @override
